@@ -1,2 +1,14 @@
 .f-block.f-container
   h4 forms
+  .f-container--flex-row-around
+    .f-form_wrap--50
+      form.f-form
+        label.f-label--hidden(for='name') Name:
+        input#name.f-input(type='text', placeholder='Name')
+        label.f-label--hidden(for='email') Email:
+        input#email.f-input(type='email', placeholder='email@website.com')
+        label.f-label--hidden(for='msg') Message:
+        textarea#msg.f-textarea(placeholder='Message...', rows='7')
+        .f-container--flex-row-end
+          input.f-btn--default(type='submit', value='Submit')
+          input.f-btn--warning.f-ml_10(type='reset', value='Reset')

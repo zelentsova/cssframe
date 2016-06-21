@@ -1,0 +1,37 @@
+.f-form_wrap
+  display: block
+
+w-container = 10, 20, 30, 40, 50, 60, 70, 80, 90, 100
+for w in w-container
+  .f-form_wrap--{w}
+    @extend .f-form_wrap
+    width: (w * 1%)
+
+.f-form
+  padding: 30px 35px
+  background-color: color_light-bg
+  border-radius 2px
+
+.f-label
+  display: block
+  &--hidden
+    display: none
+
+
+
+.f-input
+  display: block
+  width: 100%
+  box-sizing: border-box
+  margin-bottom: 20px
+  height: 45px
+  font-size: 15px
+  padding: 5px 10px
+  border-radius: 2px
+  border: 1px solid color_gray-light
+
+.f-textarea
+  @extend .f-input
+  height: auto
+  line-height: 1.3em
+

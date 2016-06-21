@@ -1,0 +1,30 @@
+.f-btn
+  padding: 14px 25px
+  display: inline-block
+  border-radius: 2px
+  text-transform: uppercase
+  cursor: pointer
+  transition: .3s
+  color: color_white
+  letter-spacing: 1px
+  font-size: 15px
+  line-height: 20px
+  box-shadow: 2px 2px 4px color_white
+  border: 1px solid transparent
+  opacity: 1
+  transform: translateY(0)
+
+
+types =  'default', 'warning', 'success', 'error', 'info'
+for type in types
+  .f-btn--{type}
+    @extend .f-btn
+    background-color: btn-color_ + type
+    &:hover
+      background-color: darken(btn-color_ + type, 10%)
+      box-shadow: 2px 2px 4px #dedede
+      border: 1px solid darken(btn-color_ + type, 15%)
+    &:focus, &:active
+      opacity: .9
+      transform: translateY(-5px)
+

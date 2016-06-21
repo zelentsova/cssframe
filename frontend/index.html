@@ -46,7 +46,7 @@
       </div>
       <div class="f-container">
         <h4>buttons</h4>
-        <div class="f-container--flex-row-between">
+        <div class="f-container--flex-row-around">
           <button class="f-btn--default">button default</button><a class="f-btn--success">button success</a>
           <button class="f-btn--error">button error</button><a class="f-btn--warning">button warning</a>
           <button class="f-btn--info">button info</button>
@@ -57,6 +57,22 @@
       </div>
       <div class="f-block f-container">
         <h4>forms</h4>
+        <div class="f-container--flex-row-around">
+          <div class="f-form_wrap--50">
+            <form class="f-form">
+              <label for="name" class="f-label--hidden">Name:</label>
+              <input id="name" type="text" placeholder="Name" class="f-input">
+              <label for="email" class="f-label--hidden">Email:</label>
+              <input id="email" type="email" placeholder="email@website.com" class="f-input">
+              <label for="msg" class="f-label--hidden">Message:</label>
+              <textarea id="msg" placeholder="Message..." rows="7" class="f-textarea"></textarea>
+              <div class="f-container--flex-row-end">
+                <input type="submit" value="Submit" class="f-btn--default">
+                <input type="reset" value="Reset" class="f-btn--warning f-ml_10">
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
       <div class="f-block f-container">
         <h4>progress bars</h4>
