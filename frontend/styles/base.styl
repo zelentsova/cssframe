@@ -1,0 +1,36 @@
+.clearfix:before,
+.clearfix:after {
+  content ' '
+  display table
+}
+
+.clearfix:after
+  clear both
+
+html
+  height: 100%
+
+body
+  min-height: 100%
+  display: flex
+  flex-direction: column
+
+html, body
+  font-family "Raleway"
+  font-size 15px
+  scroll-behavior smooth
+  min-width 320px
+
+content
+  flex: 1 0 auto
+
+h4
+  opacity: .3
+  font-size: 16px
+  font-weight: bold
+  letter-spacing: 6px
+  margin: 20px 0
+
+.content {
+  padding-top: 100px
+}
