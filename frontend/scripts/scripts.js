@@ -57,8 +57,16 @@
         return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
     }
 
-
     $(document).ready(function() {
+
+        $('#grid-select').change(function(){
+            var gridContainer = $('#grids');
+            var oldClass = gridContainer.find($('div[class*="flex-container-"]')).attr('class');
+            var newClass = "flex-container flex-container--" + $('#grid-select :selected').text();
+            $('#grid-title').text($('#grid-select :selected').text());
+            gridContainer.find($('.flex-container')).removeClass(oldClass).addClass(newClass);
+
+        });
 
         $('.portfolio__counter-item_value').counterUp({
             delay: 10, // the delay time in ms

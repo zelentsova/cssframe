@@ -54,185 +54,48 @@
       </div>
       <div id="grids" class="f-block f-container">
         <h4>grid system</h4>
-        <h5>flex-start content justify</h5>
+        <select id="grid-select">
+          <option value="flex-start" selected>flex-start</option>
+          <option value="flex-end">flex-end</option>
+          <option value="center">center</option>
+          <option value="space-between">space-between</option>
+          <option value="space-around">space-around</option>
+        </select>
+        <h5 id="grid-title">flex-start</h5>
         <div class="f-container--70">
-          <div class="flex-container--flex-start">
+          <div class="flex-container flex-container--flex-start">
             <div class="grid-example grid-example--100">container-100</div>
           </div>
-          <div class="flex-container--flex-start">
+          <div class="flex-container flex-container--flex-start">
             <div class="grid-example grid-example--90">container-90</div>
           </div>
-          <div class="flex-container--flex-start">
+          <div class="flex-container flex-container--flex-start">
             <div class="grid-example grid-example--80">container-80</div>
           </div>
-          <div class="flex-container--flex-start">
+          <div class="flex-container flex-container--flex-start">
             <div class="grid-example grid-example--70">container-70</div>
           </div>
-          <div class="flex-container--flex-start">
+          <div class="flex-container flex-container--flex-start">
             <div class="grid-example grid-example--60">container-60</div>
           </div>
-          <div class="flex-container--flex-start">
+          <div class="flex-container flex-container--flex-start">
             <div class="grid-example grid-example--50">container-50</div>
           </div>
-          <div class="flex-container--flex-start">
+          <div class="flex-container flex-container--flex-start">
             <div class="grid-example grid-example--40">container-40</div>
             <div class="grid-example grid-example--40">container-40</div>
           </div>
-          <div class="flex-container--flex-start">
+          <div class="flex-container flex-container--flex-start">
             <div class="grid-example grid-example--30">container-30</div>
             <div class="grid-example grid-example--30">container-30</div>
             <div class="grid-example grid-example--30">container-30</div>
           </div>
-          <div class="flex-container--flex-start">
+          <div class="flex-container flex-container--flex-start">
             <div class="grid-example grid-example--20">container-20</div>
             <div class="grid-example grid-example--20">container-20</div>
             <div class="grid-example grid-example--20">container-20</div>
             <div class="grid-example grid-example--20">container-20</div>
           </div>
-        </div>
-      </div>
-      <h5>space-around content justify</h5>
-      <div class="f-container--70">
-        <div class="flex-container--space-around">
-          <div class="grid-example grid-example--100">container-100</div>
-        </div>
-        <div class="flex-container--space-around">
-          <div class="grid-example grid-example--90">container-90</div>
-        </div>
-        <div class="flex-container--space-around">
-          <div class="grid-example grid-example--80">container-80</div>
-        </div>
-        <div class="flex-container--space-around">
-          <div class="grid-example grid-example--70">container-70</div>
-        </div>
-        <div class="flex-container--space-around">
-          <div class="grid-example grid-example--60">container-60</div>
-        </div>
-        <div class="flex-container--space-around">
-          <div class="grid-example grid-example--50">container-50</div>
-        </div>
-        <div class="flex-container--space-around">
-          <div class="grid-example grid-example--40">container-40</div>
-          <div class="grid-example grid-example--40">container-40</div>
-        </div>
-        <div class="flex-container--space-around">
-          <div class="grid-example grid-example--30">container-30</div>
-          <div class="grid-example grid-example--30">container-30</div>
-          <div class="grid-example grid-example--30">container-30</div>
-        </div>
-        <div class="flex-container--space-around">
-          <div class="grid-example grid-example--20">container-20</div>
-          <div class="grid-example grid-example--20">container-20</div>
-          <div class="grid-example grid-example--20">container-20</div>
-          <div class="grid-example grid-example--20">container-20</div>
-        </div>
-      </div>
-      <h5>space-between content justify</h5>
-      <div class="f-container--70">
-        <div class="flex-container--space-between">
-          <div class="grid-example grid-example--100">container-100</div>
-        </div>
-        <div class="flex-container--space-between">
-          <div class="grid-example grid-example--90">container-90</div>
-        </div>
-        <div class="flex-container--space-between">
-          <div class="grid-example grid-example--80">container-80</div>
-        </div>
-        <div class="flex-container--space-between">
-          <div class="grid-example grid-example--70">container-70</div>
-        </div>
-        <div class="flex-container--space-between">
-          <div class="grid-example grid-example--60">container-60</div>
-        </div>
-        <div class="flex-container--space-between">
-          <div class="grid-example grid-example--50">container-50</div>
-        </div>
-        <div class="flex-container--space-between">
-          <div class="grid-example grid-example--40">container-40</div>
-          <div class="grid-example grid-example--40">container-40</div>
-        </div>
-        <div class="flex-container--space-between">
-          <div class="grid-example grid-example--30">container-30</div>
-          <div class="grid-example grid-example--30">container-30</div>
-          <div class="grid-example grid-example--30">container-30</div>
-        </div>
-        <div class="flex-container--space-between">
-          <div class="grid-example grid-example--20">container-20</div>
-          <div class="grid-example grid-example--20">container-20</div>
-          <div class="grid-example grid-example--20">container-20</div>
-          <div class="grid-example grid-example--20">container-20</div>
-        </div>
-      </div>
-      <h5>center content justify</h5>
-      <div class="f-container--70">
-        <div class="flex-container--center">
-          <div class="grid-example grid-example--100">container-100</div>
-        </div>
-        <div class="flex-container--center">
-          <div class="grid-example grid-example--90">container-90</div>
-        </div>
-        <div class="flex-container--center">
-          <div class="grid-example grid-example--80">container-80</div>
-        </div>
-        <div class="flex-container--center">
-          <div class="grid-example grid-example--70">container-70</div>
-        </div>
-        <div class="flex-container--center">
-          <div class="grid-example grid-example--60">container-60</div>
-        </div>
-        <div class="flex-container--center">
-          <div class="grid-example grid-example--50">container-50</div>
-        </div>
-        <div class="flex-container--center">
-          <div class="grid-example grid-example--40">container-40</div>
-          <div class="grid-example grid-example--40">container-40</div>
-        </div>
-        <div class="flex-container--center">
-          <div class="grid-example grid-example--30">container-30</div>
-          <div class="grid-example grid-example--30">container-30</div>
-          <div class="grid-example grid-example--30">container-30</div>
-        </div>
-        <div class="flex-container--center">
-          <div class="grid-example grid-example--20">container-20</div>
-          <div class="grid-example grid-example--20">container-20</div>
-          <div class="grid-example grid-example--20">container-20</div>
-          <div class="grid-example grid-example--20">container-20</div>
-        </div>
-      </div>
-      <h5>flex-end content justify</h5>
-      <div class="f-container--70">
-        <div class="flex-container--flex-end">
-          <div class="grid-example grid-example--100">container-100</div>
-        </div>
-        <div class="flex-container--flex-end">
-          <div class="grid-example grid-example--90">container-90</div>
-        </div>
-        <div class="flex-container--flex-end">
-          <div class="grid-example grid-example--80">container-80</div>
-        </div>
-        <div class="flex-container--flex-end">
-          <div class="grid-example grid-example--70">container-70</div>
-        </div>
-        <div class="flex-container--flex-end">
-          <div class="grid-example grid-example--60">container-60</div>
-        </div>
-        <div class="flex-container--flex-end">
-          <div class="grid-example grid-example--50">container-50</div>
-        </div>
-        <div class="flex-container--flex-end">
-          <div class="grid-example grid-example--40">container-40</div>
-          <div class="grid-example grid-example--40">container-40</div>
-        </div>
-        <div class="flex-container--flex-end">
-          <div class="grid-example grid-example--30">container-30</div>
-          <div class="grid-example grid-example--30">container-30</div>
-          <div class="grid-example grid-example--30">container-30</div>
-        </div>
-        <div class="flex-container--flex-end">
-          <div class="grid-example grid-example--20">container-20</div>
-          <div class="grid-example grid-example--20">container-20</div>
-          <div class="grid-example grid-example--20">container-20</div>
-          <div class="grid-example grid-example--20">container-20</div>
         </div>
       </div>
       <div id="forms" class="f-block f-container">
