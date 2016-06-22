@@ -144,8 +144,8 @@
                 nav.removeClass('fixed');
             }
 
-            $.each(['#home','#services', '#portf', '#contacts' ],function(key, val){
-                    if (isScrolledIntoView(val,300)) {
+            $.each(['#typography','#buttons', '#grids', '#forms', '#bars', '#images', '#navi' ],function(key, val){
+                    if (isScrolledIntoView(val,100)) {
                         var nav_id = '#' + $(val).attr('id');
                         topNav.find("a").removeClass("header__nav_item--active");//remove if something was selected
                         $('a[href="' + nav_id + '"]').addClass("header__nav_item--active");//add a selected class
