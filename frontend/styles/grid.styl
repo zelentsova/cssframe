@@ -16,10 +16,30 @@
     flex-flow row nowrap
     justify-content: flex-end
 
-w-container = 10, 20, 30, 40, 50, 60, 70, 80, 90
+types = flex-start, flex-end, center, space-between, space-around
+for t in types
+  .flex-container--{t}
+    display flex
+    flex-flow row nowrap
+    justify-content: t
+
+.grid-example
+  height 50px
+  background-color #334455
+  margin-bottom 15px
+  line-height 50px
+  text-align center
+  color: color_white
+
+
+
+w-container = 10, 20, 30, 40, 50, 60, 70, 80, 90, 100
 for w in w-container
   .f-container--{w}
     @extend .f-container
+    width: (w * 1%)
+  .grid-example--{w}
+    @extend .grid-example
     width: (w * 1%)
 
 sizes = 'lg', 'md', 'sm'
