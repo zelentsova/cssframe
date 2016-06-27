@@ -54,15 +54,18 @@
       </div>
       <div id="grids" class="f-block f-container">
         <h4>grid system</h4>
-        <select id="grid-select">
-          <option value="flex-start" selected>flex-start</option>
-          <option value="flex-end">flex-end</option>
-          <option value="center">center</option>
-          <option value="space-between">space-between</option>
-          <option value="space-around">space-around</option>
-        </select>
-        <h5 id="grid-title">flex-start</h5>
         <div class="f-container--70">
+          <p class="text_block f-iblock">Select type of justify blocks:</p>
+          <select id="grid-select">
+            <option value="flex-start" selected>flex-start</option>
+            <option value="flex-end">flex-end</option>
+            <option value="center">center</option>
+            <option value="space-between">space-between</option>
+            <option value="space-around">space-around</option>
+          </select>
+          <h1 id="grid-title" class="title_primary">flex-start</h1>
+        </div>
+        <div class="f-container--70 f-mt_20">
           <div class="flex-container flex-container--flex-start">
             <div class="grid-example grid-example--100">container-100</div>
           </div>
@@ -100,7 +103,7 @@
       </div>
       <div id="forms" class="f-block f-container">
         <h4>forms</h4>
-        <div class="f-container--flex-row-around">
+        <div class="flex-container--space-around">
           <div class="f-form_wrap--50">
             <form class="f-form">
               <label for="name" class="f-label--hidden">Name:</label>
@@ -109,9 +112,21 @@
               <input id="email" type="email" placeholder="email@website.com" class="f-input">
               <label for="msg" class="f-label--hidden">Message:</label>
               <textarea id="msg" placeholder="Message..." rows="7" class="f-textarea"></textarea>
-              <div class="f-container--flex-row-end">
+              <div class="flex-container--row-end">
                 <input type="submit" value="Submit" class="f-btn--default">
                 <input type="reset" value="Reset" class="f-btn--warning f-ml_10">
+              </div>
+            </form>
+          </div>
+          <div class="f-form_wrap--40">
+            <form class="f-form">
+              <div class="flex-container--center f-mb_20"><img src="images/avatar.jpg" alt="Avatar" class="f-avatar"></div>
+              <label for="username" class="f-label--hidden">Username:</label>
+              <input id="username" type="text" placeholder="Username" class="f-input">
+              <label for="password" class="f-label--hidden">Password:</label>
+              <input id="password" type="password" placeholder="Password" class="f-input">
+              <div class="flex-container--center">
+                <input type="submit" value="Login" class="f-btn--info">
               </div>
             </form>
           </div>

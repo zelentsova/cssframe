@@ -1,13 +1,15 @@
 .f-block.f-container#grids
   h4 grid system
-  select#grid-select
-    option(value='flex-start', selected) flex-start
-    option(value='flex-end') flex-end
-    option(value='center') center
-    option(value='space-between') space-between
-    option(value='space-around') space-around
-  h5#grid-title flex-start
   .f-container--70
+    p.text_block.f-iblock Select type of justify blocks:
+    select#grid-select
+      option(value='flex-start', selected) flex-start
+      option(value='flex-end') flex-end
+      option(value='center') center
+      option(value='space-between') space-between
+      option(value='space-around') space-around
+    h1.title_primary#grid-title flex-start
+  .f-container--70.f-mt_20
     .flex-container.flex-container--flex-start
       .grid-example.grid-example--100 container-100
     .flex-container.flex-container--flex-start

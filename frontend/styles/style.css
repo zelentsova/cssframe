@@ -2,6 +2,9 @@
   margin-top: 40px;
   margin-bottom: 40px;
 }
+.f-iblock {
+  display: inline-block;
+}
 .f-container,
 .f-container--10,
 .f-container--20,
@@ -32,21 +35,6 @@
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
-}
-.f-container--flex-row-end,
-.f-container--10--flex-row-end,
-.f-container--20--flex-row-end,
-.f-container--30--flex-row-end,
-.f-container--40--flex-row-end,
-.f-container--50--flex-row-end,
-.f-container--60--flex-row-end,
-.f-container--70--flex-row-end,
-.f-container--80--flex-row-end,
-.f-container--90--flex-row-end,
-.f-container--100--flex-row-end {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-end;
 }
 .flex-container--flex-start {
   display: flex;
@@ -86,7 +74,7 @@
 .grid-example--100 {
   height: 50px;
   background-color: #345;
-  margin-bottom: 15px;
+  margin: 0 15px 15px 15px;
   line-height: 50px;
   text-align: center;
   color: #fff;
@@ -151,6 +139,36 @@
 .grid-example--100 {
   width: 100%;
 }
+.grid-example--10 {
+  background-color: #123;
+}
+.grid-example--20 {
+  background-color: #234;
+}
+.grid-example--30 {
+  background-color: #345;
+}
+.grid-example--40 {
+  background-color: #456;
+}
+.grid-example--50 {
+  background-color: #567;
+}
+.grid-example--60 {
+  background-color: #678;
+}
+.grid-example--70 {
+  background-color: #789;
+}
+.grid-example--80 {
+  background-color: #89a;
+}
+.grid-example--90 {
+  background-color: #9ab;
+}
+.grid-example--100 {
+  background-color: #abc;
+}
 @media all and (max-width: 1200px) {
   .f-container {
     max-width: 1170px;
@@ -169,26 +187,98 @@
 .f-ml_5 {
   margin-left: 5px;
 }
+.f-mr_5 {
+  margin-right: 5px;
+}
+.f-mt_5 {
+  margin-top: 5px;
+}
+.f-mb_5 {
+  margin-bottom: 5px;
+}
 .f-ml_10 {
   margin-left: 10px;
+}
+.f-mr_10 {
+  margin-right: 10px;
+}
+.f-mt_10 {
+  margin-top: 10px;
+}
+.f-mb_10 {
+  margin-bottom: 10px;
 }
 .f-ml_15 {
   margin-left: 15px;
 }
+.f-mr_15 {
+  margin-right: 15px;
+}
+.f-mt_15 {
+  margin-top: 15px;
+}
+.f-mb_15 {
+  margin-bottom: 15px;
+}
 .f-ml_20 {
   margin-left: 20px;
+}
+.f-mr_20 {
+  margin-right: 20px;
+}
+.f-mt_20 {
+  margin-top: 20px;
+}
+.f-mb_20 {
+  margin-bottom: 20px;
 }
 .f-ml_25 {
   margin-left: 25px;
 }
+.f-mr_25 {
+  margin-right: 25px;
+}
+.f-mt_25 {
+  margin-top: 25px;
+}
+.f-mb_25 {
+  margin-bottom: 25px;
+}
 .f-ml_30 {
   margin-left: 30px;
+}
+.f-mr_30 {
+  margin-right: 30px;
+}
+.f-mt_30 {
+  margin-top: 30px;
+}
+.f-mb_30 {
+  margin-bottom: 30px;
 }
 .f-ml_35 {
   margin-left: 35px;
 }
+.f-mr_35 {
+  margin-right: 35px;
+}
+.f-mt_35 {
+  margin-top: 35px;
+}
+.f-mb_35 {
+  margin-bottom: 35px;
+}
 .f-ml_40 {
   margin-left: 40px;
+}
+.f-mr_40 {
+  margin-right: 40px;
+}
+.f-mt_40 {
+  margin-top: 40px;
+}
+.f-mb_40 {
+  margin-bottom: 40px;
 }
 .clearfix:before,
 .clearfix:after {
@@ -226,13 +316,15 @@ h4 {
 button,
 a,
 input,
-textarea {
+textarea,
+select {
   font-family: "Raleway";
 }
 button:focus,
 a:focus,
 input:focus,
-textarea:focus {
+textarea:focus,
+select:focus {
   outline: none;
 }
 .content {
@@ -747,4 +839,9 @@ textarea:focus {
 .f-textarea {
   height: auto;
   line-height: 1.3em;
+}
+.f-avatar {
+  border-radius: 48%;
+  width: 100px;
+  height: 100px;
 }

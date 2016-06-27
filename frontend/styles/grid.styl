@@ -2,6 +2,9 @@
   margin-top: 40px
   margin-bottom: 40px
 
+.f-iblock
+  display: inline-block
+
 .f-container
   width 100%
   margin-left auto
@@ -11,10 +14,7 @@
     display flex
     flex-flow row nowrap
     justify-content: space-around
-  &--flex-row-end
-    display flex
-    flex-flow row nowrap
-    justify-content: flex-end
+
 
 types = flex-start, flex-end, center, space-between, space-around
 for t in types
@@ -26,12 +26,10 @@ for t in types
 .grid-example
   height 50px
   background-color #334455
-  margin-bottom 15px
+  margin 0 15px 15px 15px
   line-height 50px
   text-align center
   color: color_white
-
-
 
 w-container = 10, 20, 30, 40, 50, 60, 70, 80, 90, 100
 for w in w-container
@@ -42,14 +40,26 @@ for w in w-container
     @extend .grid-example
     width: (w * 1%)
 
+w-container-colors = 10 #123, 20 #234, 30 #345, 40 #456, 50 #567, 60 #678, 70 #789, 80 #89a, 90 #9ab, 100 #abc
+for key in w-container-colors
+  .grid-example--{key[0]}
+    background-color: key[1]
+
+
 sizes = 'lg', 'md', 'sm'
 for size in sizes
   @media all and (max-width: width_ + size)
     .f-container
       max-width: width-content_ + size
 
-
 manage-sizes = 5, 10, 15, 20, 25, 30, 35, 40
 for m-size in manage-sizes
   .f-ml_{m-size}
     margin-left: m-size * 1px
+  .f-mr_{m-size}
+    margin-right: m-size * 1px
+  .f-mt_{m-size}
+    margin-top: m-size * 1px
+  .f-mb_{m-size}
+    margin-bottom: m-size * 1px
+
