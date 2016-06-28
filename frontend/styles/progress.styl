@@ -1,0 +1,57 @@
+.f-progress_wrap
+  width: 100%
+
+.f-progress_base
+  width: 100%
+  height: 20px
+  background-color: color_light-bg
+  position: relative
+  margin: 25px 0
+
+.f-progress_filled
+  position: absolute
+  height: 20px
+  left: 0
+  top: 0
+  width: 50%
+
+.f-progress-range_base
+  width: 100%
+  height: 4px
+  background-color: color_light-bg
+  position: relative
+  margin: 25px 0
+
+.f-progress-range_filled
+  position: absolute
+  height: 20px
+  left: 0
+  top: 0
+  width: 100%
+  &:before
+    content ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 50%
+    height: 4px
+  &:after
+    content: ''
+    width: 16px
+    height: 16px
+    border-radius: 49%
+    display: block
+    position: absolute
+    left: calc(50% - 8px)
+    bottom: 10px
+    cursor: pointer
+
+types =  'default', 'warning', 'success', 'error', 'info'
+for type in types
+  .f-progress_filled--{type}
+    @extend .f-progress_filled
+    background-color: btn-color_ + type
+  .f-progress-range_filled--{type}
+    @extend .f-progress-range_filled
+    &:before, &:after
+      background-color: btn-color_ + type

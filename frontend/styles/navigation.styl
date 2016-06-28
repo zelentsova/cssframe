@@ -1,0 +1,67 @@
+.f-nav_item
+  display inline-block
+  vertical-align top
+  border-bottom 2px solid transparent
+  padding 0 10px
+  margin 0 10px
+  color color_gray-text
+  text-transform uppercase
+  line-height 49px
+  cursor pointer
+  text-decoration none
+  transition .3s
+  &:hover
+    color color_blue
+  &:first-child
+    margin-left 0
+  &:last-child
+    margin-right 0
+  &--active
+    border-bottom 2px solid transparent
+    &:hover
+      opacity: .8
+
+.f-tab
+  font-size 0
+  &_item
+    display inline-block
+    height 35px
+    border 1px solid transparent
+    line-height 34px
+    padding 0 20px
+    font-size 12px
+    text-decoration none
+    margin 0 0 -1px
+    text-transform lowercase
+    color color_gray-text
+    transition .3s
+    &--active
+      border-top 2px solid transparent
+      border-right 1px solid color_gray-light
+      border-left 1px solid color_gray-light
+      border-bottom 1px solid color_white
+  &_content
+    border-top 1px solid color_gray-light
+    width: 100%
+    height: 20px
+
+types =  'default', 'warning', 'success', 'error', 'info'
+for type in types
+  .f-nav--{type}
+    .f-nav_item
+      &:hover
+        color: btn-color_ + type
+      &--active
+        border-bottom-color: btn-color_ + type
+        color: btn-color_ + type
+        &:hover
+          color: color_gray-text
+  .f-tabs--{type}
+    .f-tab_item
+      &:hover
+        color: btn-color_ + type
+      &--active
+        border-top-color: btn-color_ + type
+        color: btn-color_ + type
+        &:hover
+          color: color_gray-text
