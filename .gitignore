@@ -5,3 +5,5 @@ dist
 .idea
 bower_components
 test/bower_components
+frontend/index.html
+frontend/styles/style.css
