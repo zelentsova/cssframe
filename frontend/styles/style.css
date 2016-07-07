@@ -1,6 +1,6 @@
 .f-block {
   margin-top: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 140px;
 }
 .f-iblock {
   display: inline-block;
@@ -319,6 +319,7 @@ h5 {
   letter-spacing: 3px;
   text-align: center;
   font-weight: bold;
+  margin: 40px 0 30px;
 }
 button,
 a,
@@ -712,13 +713,42 @@ select:focus {
   opacity: 1;
   transform: translateY(0);
 }
+.f-btn--big,
+.f-btn--default--big,
+.f-btn--warning--big,
+.f-btn--success--big,
+.f-btn--error--big,
+.f-btn--info--big {
+  padding: 11px 25px;
+  font-size: 15px;
+}
+.f-btn--mid,
+.f-btn--default--mid,
+.f-btn--warning--mid,
+.f-btn--success--mid,
+.f-btn--error--mid,
+.f-btn--info--mid {
+  padding: 8px 20px;
+  font-size: 14px;
+}
+.f-btn--sm,
+.f-btn--default--sm,
+.f-btn--warning--sm,
+.f-btn--success--sm,
+.f-btn--error--sm,
+.f-btn--info--sm {
+  padding: 5px 15px;
+  text-transform: lowercase;
+  font-size: 14px;
+}
 .f-btn--default {
   background-color: #6d9dc5;
+  border: 1px solid #578ebc;
 }
 .f-btn--default:hover {
   background-color: #578ebc;
   box-shadow: 2px 2px 4px #dedede;
-  border: 1px solid #4c87b8;
+  border: 1px solid #4177a4;
 }
 .f-btn--default:focus,
 .f-btn--default:active {
@@ -727,11 +757,12 @@ select:focus {
 }
 .f-btn--warning {
   background-color: #f6bd60;
+  border: 1px solid #f4b040;
 }
 .f-btn--warning:hover {
   background-color: #f4b040;
   box-shadow: 2px 2px 4px #dedede;
-  border: 1px solid #f3a92f;
+  border: 1px solid #f19b0f;
 }
 .f-btn--warning:focus,
 .f-btn--warning:active {
@@ -740,11 +771,12 @@ select:focus {
 }
 .f-btn--success {
   background-color: #97d68b;
+  border: 1px solid #80cd71;
 }
 .f-btn--success:hover {
   background-color: #80cd71;
   box-shadow: 2px 2px 4px #dedede;
-  border: 1px solid #74c864;
+  border: 1px solid #5dbf4a;
 }
 .f-btn--success:focus,
 .f-btn--success:active {
@@ -753,11 +785,12 @@ select:focus {
 }
 .f-btn--error {
   background-color: #b77575;
+  border: 1px solid #ad6161;
 }
 .f-btn--error:hover {
   background-color: #ad6161;
   box-shadow: 2px 2px 4px #dedede;
-  border: 1px solid #a85757;
+  border: 1px solid #944d4d;
 }
 .f-btn--error:focus,
 .f-btn--error:active {
@@ -766,11 +799,12 @@ select:focus {
 }
 .f-btn--info {
   background-color: #a49ebf;
+  border: 1px solid #9089b1;
 }
 .f-btn--info:hover {
   background-color: #9089b1;
   box-shadow: 2px 2px 4px #dedede;
-  border: 1px solid #867eaa;
+  border: 1px solid #73699c;
 }
 .f-btn--info:focus,
 .f-btn--info:active {
@@ -832,7 +866,8 @@ select:focus {
   display: none;
 }
 .f-input,
-.f-textarea {
+.f-textarea,
+.f-select {
   display: block;
   width: 100%;
   box-sizing: border-box;

@@ -44,26 +44,26 @@
           <blockquote class="text_blockquote">“It’s a bit squalid, isn’t it?”</blockquote>
         </div>
       </div>
-      <div id="buttons" class="f-container">
+      <div id="buttons" class="f-block f-container">
         <h4>buttons</h4>
-        <div class="f-container--flex-row-around">
-          <button class="f-btn--default">button default</button><a class="f-btn--success">button success</a>
-          <button class="f-btn--error">button error</button><a class="f-btn--warning">button warning</a>
-          <button class="f-btn--info">button info</button>
-        </div>
+        <h5>big buttons</h5>
+        <div class="f-container--flex-row-around"><a class="f-btn--big f-btn--default">button default</a><a class="f-btn--big f-btn--success">button success</a><a class="f-btn--big f-btn--error">button error</a><a class="f-btn--big f-btn--warning">button warning</a><a class="f-btn--big f-btn--info">button info</a></div>
+        <h5>middle buttons</h5>
+        <div class="f-container--flex-row-around"><a class="f-btn--mid f-btn--default">button default</a><a class="f-btn--mid f-btn--success">button success</a><a class="f-btn--mid f-btn--error">button error</a><a class="f-btn--mid f-btn--warning">button warning</a><a class="f-btn--mid f-btn--info">button info</a></div>
+        <h5>small buttons</h5>
+        <div class="f-container--flex-row-around"><a class="f-btn--sm f-btn--default">button default</a><a class="f-btn--sm f-btn--success">button success</a><a class="f-btn--sm f-btn--error">button error</a><a class="f-btn--sm f-btn--warning">button warning</a><a class="f-btn--sm f-btn--info">button info</a></div>
       </div>
       <div id="grids" class="f-block f-container">
         <h4>grid system</h4>
-        <div class="f-container--70">
+        <div class="f-container--50">
           <p class="text_block f-iblock">Select type of justify blocks:</p>
-          <select id="grid-select">
+          <select id="grid-select" class="f-select">
             <option value="flex-start" selected>flex-start</option>
             <option value="flex-end">flex-end</option>
             <option value="center">center</option>
             <option value="space-between">space-between</option>
             <option value="space-around">space-around</option>
           </select>
-          <h1 id="grid-title" class="title_primary">flex-start</h1>
         </div>
         <div class="f-container--70 f-mt_20">
           <div class="flex-container flex-container--flex-start">

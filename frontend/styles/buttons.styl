@@ -13,17 +13,27 @@
   border: 1px solid transparent
   opacity: 1
   transform: translateY(0)
-
+  &--big
+    padding: 11px 25px
+    font-size: 15px
+  &--mid
+    padding: 8px 20px
+    font-size: 14px
+  &--sm
+    padding: 5px 15px
+    text-transform: lowercase
+    font-size: 14px
 
 types =  'default', 'warning', 'success', 'error', 'info'
 for type in types
   .f-btn--{type}
     @extend .f-btn
     background-color: btn-color_ + type
+    border: 1px solid darken(btn-color_ + type, 10%)
     &:hover
       background-color: darken(btn-color_ + type, 10%)
       box-shadow: 2px 2px 4px #dedede
-      border: 1px solid darken(btn-color_ + type, 15%)
+      border: 1px solid darken(btn-color_ + type, 25%)
     &:focus, &:active
       opacity: .9
       transform: translateY(-5px)

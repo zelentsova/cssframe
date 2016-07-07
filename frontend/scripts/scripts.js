@@ -63,7 +63,6 @@
             var gridContainer = $('#grids');
             var oldClass = gridContainer.find($('div[class*="flex-container-"]')).attr('class');
             var newClass = "flex-container flex-container--" + $('#grid-select :selected').text();
-            $('#grid-title').text($('#grid-select :selected').text());
             gridContainer.find($('.flex-container')).removeClass(oldClass).addClass(newClass);
 
         });
