@@ -44,10 +44,10 @@ types =  'default', 'warning', 'success', 'error', 'info'
 for type in types
   .input--{type}
     @extend .input
-    background-color: lighten(btn-color_ + type, 85%)
+    background-color: lighten(btn-color_ + type, 80%)
     border-bottom: 1px dashed lighten(btn-color_ + type, 60%)
     &:focus
-      background-color: lighten(btn-color_ + type, 80%)
+      background-color: lighten(btn-color_ + type, 75%)
       border-bottom: 1px dashed lighten(btn-color_ + type, 40%)
 
 .f-textarea
