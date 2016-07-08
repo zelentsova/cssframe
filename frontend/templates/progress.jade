@@ -4,20 +4,23 @@
   .flex--space-around
     .wrap50
       .f-progress_wrap
-        .f-progress_base
-          .f-progress_filled--info(data-percents = '80')
+        p.text_block.f-iblock Enter the value
+        input(type='number', min='0', max='100',  ng-model="example.text").input--success#progress-value
       .f-progress_wrap
         .f-progress_base
-          .f-progress_filled--default(data-percents = '80')
+          .f-progress_filled--info( ng-value = 'example.text')
       .f-progress_wrap
         .f-progress_base
-          .f-progress_filled--success(data-percents = '50')
+          .f-progress_filled--default(ng-value = 'example.text')
       .f-progress_wrap
         .f-progress_base
-          .f-progress_filled--warning(data-percents = '50')
+          .f-progress_filled--success(ng-value = 'example.text')
       .f-progress_wrap
         .f-progress_base
-          .f-progress_filled--error(data-percents = '50')
+          .f-progress_filled--warning(ng-value = 'example.text')
+      .f-progress_wrap
+        .f-progress_base
+          .f-progress_filled--error(ng-value = 'example.text')
   h5 range bars
   .flex--space-around
     .wrap50

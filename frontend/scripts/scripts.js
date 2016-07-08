@@ -9,7 +9,10 @@
         this.isSet = function (tabId) {
             return this.tab === tabId;
         };
-
+        
+        $scope.progressPercents = $('#progress-value').val();
+        console.log($scope.progressPercents);
+        
         $scope.products = [
             {name : "awesome photo 1", src : 'images/img.jpg', category : "graphic", description : "Eum cu tantas legere complectitur, hinc utamu"},
             {name : "awesome photo 3", src : 'images/img2.jpg', category : "web", description : "Eum cu tantas legere complectitur, hinc utamu"},
@@ -45,7 +48,13 @@
         $scope.clickToOpen = function (item) {
             ngDialog.open({ template: ' <div class="popup_wrap"><img class="popup_img" src="'+ item.src +'" alt=""/><span class="popup_name">'+ item.name +'</span>', className: 'ngdialog-theme-default', plain: true, width: '60%' });
         };
+        $scope.$watch('ready', function() {
+            if($scope.ready == true) {
+                //now the data-id attribute works
+            }
+        });
     }]);
+    
 
     function isScrolledIntoView(elem,offset) {
         var $elem = $(elem);
@@ -61,16 +70,20 @@
 
         $('#grid-select').change(function(){
             var gridContainer = $('#grids');
-            var oldClass = gridContainer.find($('div[class*="flex-"]')).attr('class');
-            var newClass = "flex flex--" + $('#grid-select :selected').text();
-            gridContainer.find($('.flex')).removeClass(oldClass).addClass(newClass);
-
+            var oldClass = gridContainer.find($('div[class*="flex-container-"]')).attr('class');
+            var newClass = "flex-container flex-container--" + $('#grid-select :selected').text();
+            gridContainer.find($('.flex-container')).removeClass(oldClass).addClass(newClass);
         });
 
-        $('.portfolio__counter-item_value').counterUp({
-            delay: 10, // the delay time in ms
-            time: 1000 // the speed time in ms
+        $('#progress-value').change(function(){
+            // console.log( $('div[class^="f-progress_filled"]').attr('value'));
+            $('div[class^="f-progress_filled"]').each(function(){
+                var width = $(this).attr('value');
+                $(this).css('width', width + '%');
+            });
         });
+
+        
         //gallery settings
         var slickSettings = {
             centerMode: true,

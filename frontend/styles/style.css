@@ -1234,6 +1234,7 @@ select:focus {
   left: 0;
   top: 0;
   width: 50%;
+  transition: 0.3s;
 }
 .f-progress-range_base {
   width: 100%;

@@ -16,6 +16,7 @@
     <link href="../node_modules/reset-css/reset.css" rel="stylesheet" type="text/css">
     <link href="../node_modules/slick-carousel/slick/slick.css" rel="stylesheet" type="text/css">
     <link href="../node_modules/slick-carousel/slick/slick-theme.css" rel="stylesheet" type="text/css">
+    <link href="../node_modules/octicons/build/font/octicons.min.css" rel="stylesheet" type="text/css">
     <link href="../node_modules/ng-dialog/css/ngDialog.css" rel="stylesheet" type="text/css">
     <link href="../node_modules/ng-dialog/css/ngDialog-theme-default.css" rel="stylesheet" type="text/css">
     <link href="style.css" rel="stylesheet" type="text/css">
@@ -139,8 +140,8 @@
         <div class="flex--center f-mb_30">
           <div class="wrap40">
             <form class="form">
-              <label for="username" class="f-label--hidden">Email:</label>
-              <input id="username" type="text" placeholder="Enter your email" class="input--lg input--error">
+              <label for="usermail" class="f-label--hidden">Email:</label>
+              <input id="usermail" type="text" placeholder="Enter your email" class="input--lg input--error">
               <div class="flex--center">
                 <input type="submit" value="Registration" class="btn--lg btn--default">
               </div>
@@ -154,28 +155,32 @@
         <div class="flex--space-around">
           <div class="wrap50">
             <div class="f-progress_wrap">
+              <p class="text_block f-iblock">Enter the value</p>
+              <input type="number" min="0" max="100" ng-model="example.text" id="progress-value" class="input--success">
+            </div>
+            <div class="f-progress_wrap">
               <div class="f-progress_base">
-                <div data-percents="80" class="f-progress_filled--info"></div>
+                <div ng-value="example.text" class="f-progress_filled--info"></div>
               </div>
             </div>
             <div class="f-progress_wrap">
               <div class="f-progress_base">
-                <div data-percents="80" class="f-progress_filled--default"></div>
+                <div ng-value="example.text" class="f-progress_filled--default"></div>
               </div>
             </div>
             <div class="f-progress_wrap">
               <div class="f-progress_base">
-                <div data-percents="50" class="f-progress_filled--success"></div>
+                <div ng-value="example.text" class="f-progress_filled--success"></div>
               </div>
             </div>
             <div class="f-progress_wrap">
               <div class="f-progress_base">
-                <div data-percents="50" class="f-progress_filled--warning"></div>
+                <div ng-value="example.text" class="f-progress_filled--warning"></div>
               </div>
             </div>
             <div class="f-progress_wrap">
               <div class="f-progress_base">
-                <div data-percents="50" class="f-progress_filled--error"></div>
+                <div ng-value="example.text" class="f-progress_filled--error"></div>
               </div>
             </div>
           </div>
