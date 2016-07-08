@@ -1,24 +1,35 @@
 .f-block.f-container#forms
   h4 forms
-  .flex--space-around
-    .f-form_wrap--50
-      form.f-form
+  h5 feedback form with small inputs
+  .flex--center.f-mb_30
+    .wrap40
+      form.form
         label.f-label--hidden(for='name') Name:
-        input#name.f-input(type='text', placeholder='Name')
+        input#name.input--sm(type='text', placeholder='Name')
         label.f-label--hidden(for='email') Email:
-        input#email.f-input(type='email', placeholder='email@website.com')
+        input#email.input--sm(type='email', placeholder='email@website.com')
         label.f-label--hidden(for='msg') Message:
         textarea#msg.f-textarea(placeholder='Message...', rows='7')
-        .flex--row-end
-          input.f-btn--default(type='submit', value='Submit')
-          input.f-btn--warning.f-ml_10(type='reset', value='Reset')
-    .f-form_wrap--40
-      form.f-form
+        .flex--center
+          input.btn--sm.btn--default(type='submit', value='Submit')
+          input.btn--sm.btn--warning.f-ml_10(type='reset', value='Reset')
+  h5 login form with medium inputs
+  .flex--center.f-mb_30
+    .wrap40
+      form.form
         .flex--center.f-mb_20
           img.f-avatar(src='https://api.adorable.io/avatars/285/dffdbott@adorable.io.png', alt='Avatar')
         label.f-label--hidden(for='username') Username:
-        input#username.f-input(type='text', placeholder='Username')
+        input#username.input(type='text', placeholder='Enter your username')
         label.f-label--hidden(for='password') Password:
-        input#password.f-input(type='password', placeholder='Password')
+        input#password.input--default(type='password', placeholder='Enter your password')
         .flex--center
-          input.f-btn--info(type='submit', value='Login')
+          input.btn--md.btn--info(type='submit', value='Login')
+  h5 registration form with large input
+  .flex--center.f-mb_30
+    .wrap40
+      form.form
+        label.f-label--hidden(for='username') Email:
+        input#username.input--lg.input--error(type='text', placeholder='Enter your email')
+        .flex--center
+          input.btn--lg.btn--default(type='submit', value='Registration')

@@ -1,4 +1,4 @@
-.f-btn
+.btn
   padding: 14px 25px
   display: inline-block
   border-radius: 2px
@@ -13,10 +13,10 @@
   border: 1px solid transparent
   opacity: 1
   transform: translateY(0)
-  &--big
+  &--lg
     padding: 11px 25px
     font-size: 15px
-  &--mid
+  &--md
     padding: 8px 20px
     font-size: 14px
   &--sm
@@ -26,8 +26,8 @@
 
 types =  'default', 'warning', 'success', 'error', 'info'
 for type in types
-  .f-btn--{type}
-    @extend .f-btn
+  .btn--{type}
+    @extend .btn
     background-color: btn-color_ + type
     border: 1px solid darken(btn-color_ + type, 10%)
     &:hover

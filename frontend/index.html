@@ -47,11 +47,11 @@
       <div id="buttons" class="f-block f-container">
         <h4>buttons</h4>
         <h5>big buttons</h5>
-        <div class="f-container--flex-row-around"><a class="f-btn--big f-btn--default">button default</a><a class="f-btn--big f-btn--success">button success</a><a class="f-btn--big f-btn--error">button error</a><a class="f-btn--big f-btn--warning">button warning</a><a class="f-btn--big f-btn--info">button info</a></div>
+        <div class="f-container--flex-row-around"><a class="btn--lg btn--default">button default</a><a class="btn--lg btn--success">button success</a><a class="btn--lg btn--error">button error</a><a class="btn--lg btn--warning">button warning</a><a class="btn--lg btn--info">button info</a></div>
         <h5>middle buttons</h5>
-        <div class="f-container--flex-row-around"><a class="f-btn--mid f-btn--default">button default</a><a class="f-btn--mid f-btn--success">button success</a><a class="f-btn--mid f-btn--error">button error</a><a class="f-btn--mid f-btn--warning">button warning</a><a class="f-btn--mid f-btn--info">button info</a></div>
+        <div class="f-container--flex-row-around"><a class="btn--md btn--default">button default</a><a class="btn--md btn--success">button success</a><a class="btn--md btn--error">button error</a><a class="btn--md btn--warning">button warning</a><a class="btn--md btn--info">button info</a></div>
         <h5>small buttons</h5>
-        <div class="f-container--flex-row-around"><a class="f-btn--sm f-btn--default">button default</a><a class="f-btn--sm f-btn--success">button success</a><a class="f-btn--sm f-btn--error">button error</a><a class="f-btn--sm f-btn--warning">button warning</a><a class="f-btn--sm f-btn--info">button info</a></div>
+        <div class="f-container--flex-row-around"><a class="btn--sm btn--default">button default</a><a class="btn--sm btn--success">button success</a><a class="btn--sm btn--error">button error</a><a class="btn--sm btn--warning">button warning</a><a class="btn--sm btn--info">button info</a></div>
       </div>
       <div id="grids" class="f-block f-container">
         <h4>grid system</h4>
@@ -67,66 +67,82 @@
         </div>
         <div class="f-container--70 f-mt_20">
           <div class="flex flex--flex-start">
-            <div class="flex100 grid-example grid-example--100">container-100</div>
+            <div class="wrap100 grid-example grid-example--100">container-100</div>
           </div>
           <div class="flex flex--flex-start">
-            <div class="flex90 grid-example grid-example--90">container-90</div>
+            <div class="wrap90 grid-example grid-example--90">container-90</div>
           </div>
           <div class="flex flex--flex-start">
-            <div class="flex80 grid-example grid-example--80">container-80</div>
+            <div class="wrap80 grid-example grid-example--80">container-80</div>
           </div>
           <div class="flex flex--flex-start">
-            <div class="flex70 grid-example grid-example--70">container-70</div>
+            <div class="wrap70 grid-example grid-example--70">container-70</div>
           </div>
           <div class="flex flex--flex-start">
-            <div class="flex60 grid-example grid-example--60">container-60</div>
+            <div class="wrap60 grid-example grid-example--60">container-60</div>
           </div>
           <div class="flex flex--flex-start">
-            <div class="flex50 grid-example grid-example--50">container-50</div>
+            <div class="wrap50 grid-example grid-example--50">container-50</div>
           </div>
           <div class="flex flex--flex-start">
-            <div class="flex40 grid-example grid-example--40">container-40</div>
-            <div class="flex40 grid-example grid-example--40">container-40</div>
+            <div class="wrap40 grid-example grid-example--40">container-40</div>
+            <div class="wrap40 grid-example grid-example--40">container-40</div>
           </div>
           <div class="flex flex--flex-start">
-            <div class="flex30 grid-example grid-example--30">container-30</div>
-            <div class="flex30 grid-example grid-example--30">container-30</div>
-            <div class="flex30 grid-example grid-example--30">container-30</div>
+            <div class="wrap30 grid-example grid-example--30">container-30</div>
+            <div class="wrap30 grid-example grid-example--30">container-30</div>
+            <div class="wrap30 grid-example grid-example--30">container-30</div>
           </div>
           <div class="flex flex--flex-start">
-            <div class="flex20 grid-example grid-example--20">container-20</div>
-            <div class="flex20 grid-example grid-example--20">container-20</div>
-            <div class="flex20 grid-example grid-example--20">container-20</div>
-            <div class="flex20 grid-example grid-example--20">container-20</div>
+            <div class="wrap20 grid-example grid-example--20">container-20</div>
+            <div class="wrap20 grid-example grid-example--20">container-20</div>
+            <div class="wrap20 grid-example grid-example--20">container-20</div>
+            <div class="wrap20 grid-example grid-example--20">container-20</div>
           </div>
         </div>
       </div>
       <div id="forms" class="f-block f-container">
         <h4>forms</h4>
-        <div class="flex--space-around">
-          <div class="f-form_wrap--50">
-            <form class="f-form">
+        <h5>feedback form with small inputs</h5>
+        <div class="flex--center f-mb_30">
+          <div class="wrap40">
+            <form class="form">
               <label for="name" class="f-label--hidden">Name:</label>
-              <input id="name" type="text" placeholder="Name" class="f-input">
+              <input id="name" type="text" placeholder="Name" class="input--sm">
               <label for="email" class="f-label--hidden">Email:</label>
-              <input id="email" type="email" placeholder="email@website.com" class="f-input">
+              <input id="email" type="email" placeholder="email@website.com" class="input--sm">
               <label for="msg" class="f-label--hidden">Message:</label>
               <textarea id="msg" placeholder="Message..." rows="7" class="f-textarea"></textarea>
-              <div class="flex--row-end">
-                <input type="submit" value="Submit" class="f-btn--default">
-                <input type="reset" value="Reset" class="f-btn--warning f-ml_10">
+              <div class="flex--center">
+                <input type="submit" value="Submit" class="btn--sm btn--default">
+                <input type="reset" value="Reset" class="btn--sm btn--warning f-ml_10">
               </div>
             </form>
           </div>
-          <div class="f-form_wrap--40">
-            <form class="f-form">
+        </div>
+        <h5>login form with medium inputs</h5>
+        <div class="flex--center f-mb_30">
+          <div class="wrap40">
+            <form class="form">
               <div class="flex--center f-mb_20"><img src="https://api.adorable.io/avatars/285/dffdbott@adorable.io.png" alt="Avatar" class="f-avatar"></div>
               <label for="username" class="f-label--hidden">Username:</label>
-              <input id="username" type="text" placeholder="Username" class="f-input">
+              <input id="username" type="text" placeholder="Enter your username" class="input">
               <label for="password" class="f-label--hidden">Password:</label>
-              <input id="password" type="password" placeholder="Password" class="f-input">
+              <input id="password" type="password" placeholder="Enter your password" class="input--default">
               <div class="flex--center">
-                <input type="submit" value="Login" class="f-btn--info">
+                <input type="submit" value="Login" class="btn--md btn--info">
+              </div>
+            </form>
+          </div>
+        </div>
+        <h5>registration form with large input</h5>
+        <div class="flex--center f-mb_30">
+          <div class="wrap40">
+            <form class="form">
+              <label for="username" class="f-label--hidden">Email:</label>
+              <input id="username" type="text" placeholder="Enter your email" class="input--lg input--error">
+              <div class="flex--center">
+                <input type="submit" value="Registration" class="btn--lg btn--default">
               </div>
             </form>
           </div>
@@ -136,7 +152,7 @@
         <h4>progress bars</h4>
         <h5>regular bars</h5>
         <div class="flex--space-around">
-          <div class="f-form_wrap--50">
+          <div class="wrap50">
             <div class="f-progress_wrap">
               <div class="f-progress_base">
                 <div data-percents="80" class="f-progress_filled--info"></div>
@@ -166,7 +182,7 @@
         </div>
         <h5>range bars</h5>
         <div class="flex--space-around">
-          <div class="f-form_wrap--50">
+          <div class="wrap50">
             <div class="f-progress_wrap">
               <div class="f-progress-range_base">
                 <div data-percents="80" class="f-progress-range_filled--info"></div>
