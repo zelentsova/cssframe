@@ -36,42 +36,32 @@
   flex-flow: row nowrap;
   justify-content: space-around;
 }
-.flex-container--flex-start {
+.flex--flex-start {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
 }
-.flex-container--flex-end {
+.flex--flex-end {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-end;
 }
-.flex-container--center {
+.flex--center {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
 }
-.flex-container--space-between {
+.flex--space-between {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
 }
-.flex-container--space-around {
+.flex--space-around {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
 }
-.grid-example,
-.grid-example--10,
-.grid-example--20,
-.grid-example--30,
-.grid-example--40,
-.grid-example--50,
-.grid-example--60,
-.grid-example--70,
-.grid-example--80,
-.grid-example--90,
-.grid-example--100 {
+.grid-example {
   height: 50px;
   background-color: #345;
   margin: 0 15px 15px 15px;
@@ -82,92 +72,212 @@
 .f-container--10 {
   width: 10%;
 }
-.grid-example--10 {
+.flex10 {
   width: 10%;
 }
 .f-container--20 {
   width: 20%;
 }
-.grid-example--20 {
+.flex20 {
   width: 20%;
 }
 .f-container--30 {
   width: 30%;
 }
-.grid-example--30 {
+.flex30 {
   width: 30%;
 }
 .f-container--40 {
   width: 40%;
 }
-.grid-example--40 {
+.flex40 {
   width: 40%;
 }
 .f-container--50 {
   width: 50%;
 }
-.grid-example--50 {
+.flex50 {
   width: 50%;
 }
 .f-container--60 {
   width: 60%;
 }
-.grid-example--60 {
+.flex60 {
   width: 60%;
 }
 .f-container--70 {
   width: 70%;
 }
-.grid-example--70 {
+.flex70 {
   width: 70%;
 }
 .f-container--80 {
   width: 80%;
 }
-.grid-example--80 {
+.flex80 {
   width: 80%;
 }
 .f-container--90 {
   width: 90%;
 }
-.grid-example--90 {
+.flex90 {
   width: 90%;
 }
 .f-container--100 {
   width: 100%;
 }
-.grid-example--100 {
+.flex100 {
   width: 100%;
 }
-.grid-example--10 {
-  background-color: #123;
+.flex--flex-start .grid-example--10 {
+  background-color: #74a2c8;
 }
-.grid-example--20 {
-  background-color: #234;
+.flex--flex-start .grid-example--20 {
+  background-color: #7ca7cb;
 }
-.grid-example--30 {
-  background-color: #345;
+.flex--flex-start .grid-example--30 {
+  background-color: #83acce;
 }
-.grid-example--40 {
-  background-color: #456;
+.flex--flex-start .grid-example--40 {
+  background-color: #8ab1d1;
 }
-.grid-example--50 {
-  background-color: #567;
+.flex--flex-start .grid-example--50 {
+  background-color: #92b5d3;
 }
-.grid-example--60 {
-  background-color: #678;
+.flex--flex-start .grid-example--60 {
+  background-color: #99bad6;
 }
-.grid-example--70 {
-  background-color: #789;
+.flex--flex-start .grid-example--70 {
+  background-color: #a0bfd9;
 }
-.grid-example--80 {
-  background-color: #89a;
+.flex--flex-start .grid-example--80 {
+  background-color: #a7c4dc;
 }
-.grid-example--90 {
-  background-color: #9ab;
+.flex--flex-start .grid-example--90 {
+  background-color: #afc9df;
 }
-.grid-example--100 {
-  background-color: #abc;
+.flex--flex-start .grid-example--100 {
+  background-color: #b6cee2;
+}
+.flex--flex-end .grid-example--10 {
+  background-color: #f6c068;
+}
+.flex--flex-end .grid-example--20 {
+  background-color: #f7c470;
+}
+.flex--flex-end .grid-example--30 {
+  background-color: #f7c778;
+}
+.flex--flex-end .grid-example--40 {
+  background-color: #f8ca80;
+}
+.flex--flex-end .grid-example--50 {
+  background-color: #f8ce88;
+}
+.flex--flex-end .grid-example--60 {
+  background-color: #f9d190;
+}
+.flex--flex-end .grid-example--70 {
+  background-color: #f9d498;
+}
+.flex--flex-end .grid-example--80 {
+  background-color: #fad7a0;
+}
+.flex--flex-end .grid-example--90 {
+  background-color: #fadba8;
+}
+.flex--flex-end .grid-example--100 {
+  background-color: #fbdeb0;
+}
+.flex--center .grid-example--10 {
+  background-color: #9cd891;
+}
+.flex--center .grid-example--20 {
+  background-color: #a1da97;
+}
+.flex--center .grid-example--30 {
+  background-color: #a7dc9c;
+}
+.flex--center .grid-example--40 {
+  background-color: #acdea2;
+}
+.flex--center .grid-example--50 {
+  background-color: #b1e0a8;
+}
+.flex--center .grid-example--60 {
+  background-color: #b6e2ae;
+}
+.flex--center .grid-example--70 {
+  background-color: #bbe4b4;
+}
+.flex--center .grid-example--80 {
+  background-color: #c1e6b9;
+}
+.flex--center .grid-example--90 {
+  background-color: #c6e8bf;
+}
+.flex--center .grid-example--100 {
+  background-color: #cbebc5;
+}
+.flex--space-between .grid-example--10 {
+  background-color: #bb7c7c;
+}
+.flex--space-between .grid-example--20 {
+  background-color: #be8383;
+}
+.flex--space-between .grid-example--30 {
+  background-color: #c28a8a;
+}
+.flex--space-between .grid-example--40 {
+  background-color: #c59191;
+}
+.flex--space-between .grid-example--50 {
+  background-color: #c99898;
+}
+.flex--space-between .grid-example--60 {
+  background-color: #cd9e9e;
+}
+.flex--space-between .grid-example--70 {
+  background-color: #d0a5a5;
+}
+.flex--space-between .grid-example--80 {
+  background-color: #d4acac;
+}
+.flex--space-between .grid-example--90 {
+  background-color: #d7b3b3;
+}
+.flex--space-between .grid-example--100 {
+  background-color: #dbbaba;
+}
+.flex--space-around .grid-example--10 {
+  background-color: #a9a3c2;
+}
+.flex--space-around .grid-example--20 {
+  background-color: #ada8c5;
+}
+.flex--space-around .grid-example--30 {
+  background-color: #b2adc9;
+}
+.flex--space-around .grid-example--40 {
+  background-color: #b6b1cc;
+}
+.flex--space-around .grid-example--50 {
+  background-color: #bbb6cf;
+}
+.flex--space-around .grid-example--60 {
+  background-color: #bfbbd2;
+}
+.flex--space-around .grid-example--70 {
+  background-color: #c4c0d5;
+}
+.flex--space-around .grid-example--80 {
+  background-color: #c8c5d9;
+}
+.flex--space-around .grid-example--90 {
+  background-color: #cdcadc;
+}
+.flex--space-around .grid-example--100 {
+  background-color: #d2cfdf;
 }
 @media all and (max-width: 1200px) {
   .f-container {

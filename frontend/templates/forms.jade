@@ -1,6 +1,6 @@
 .f-block.f-container#forms
   h4 forms
-  .flex-container--space-around
+  .flex--space-around
     .f-form_wrap--50
       form.f-form
         label.f-label--hidden(for='name') Name:
@@ -9,16 +9,16 @@
         input#email.f-input(type='email', placeholder='email@website.com')
         label.f-label--hidden(for='msg') Message:
         textarea#msg.f-textarea(placeholder='Message...', rows='7')
-        .flex-container--row-end
+        .flex--row-end
           input.f-btn--default(type='submit', value='Submit')
           input.f-btn--warning.f-ml_10(type='reset', value='Reset')
     .f-form_wrap--40
       form.f-form
-        .flex-container--center.f-mb_20
+        .flex--center.f-mb_20
           img.f-avatar(src='https://api.adorable.io/avatars/285/dffdbott@adorable.io.png', alt='Avatar')
         label.f-label--hidden(for='username') Username:
         input#username.f-input(type='text', placeholder='Username')
         label.f-label--hidden(for='password') Password:
         input#password.f-input(type='password', placeholder='Password')
-        .flex-container--center
+        .flex--center
           input.f-btn--info(type='submit', value='Login')
